@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            cursor: pointer;
+        }
+        th.sort-asc::after {
+            content: " 🔼";
+        }
+        th.sort-desc::after {
+            content: " 🔽";
+        }
+    </style>
+</head>
+<body>
+    <h1>Here You Can See the Records</h1>
+
+    <table id="recordsTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Date/Time</th>
+                <th onclick="sortTable(1)">Open</th>
+                <th onclick="sortTable(2)">High</th>
+                <th onclick="sortTable(3)">Low</th>
+                <th onclick="sortTable(4)">Close</th>
+                <th onclick="sortTable(5)">Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in Record %}
+            <tr>
+                <td>{{ record.Date_time }}</td>
+                <td>{{ record.open }}</td>
+                <td>{{ record.high }}</td>
+                <td>{{ record.low }}</td>
+                <td>{{ record.close }}</td>
+                <td>{{ record.volume }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'home' %}">Back to Home Page</a>
+
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("recordsTable");
+            const rows = Array.from(table.rows).slice(1); // Skip the header row
+            const isAscending = table.getAttribute("data-sort-asc") === "true";
+
+            rows.sort((a, b) => {
+                const cellA = a.cells[columnIndex].innerText;
+                const cellB = b.cells[columnIndex].innerText;
+
+                if (columnIndex === 0) { // Date column
+                    return new Date(cellA) - new Date(cellB);
+                } else if (columnIndex === 5) { // Volume column (integer)
+                    return isAscending ? cellA - cellB : cellB - cellA;
+                } else { // Decimal columns
+                    return isAscending ? parseFloat(cellA) - parseFloat(cellB) : parseFloat(cellB) - parseFloat(cellA);
+                }
+            });
+
+            // Toggle sorting direction
+            table.setAttribute("data-sort-asc", !isAscending);
+
+            // Update table with sorted rows
+            const tbody = table.querySelector("tbody");
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

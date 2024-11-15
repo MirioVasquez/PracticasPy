@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Records</title>
+</head>
+<body>
+    <div class="centered-content">
+        <p>Go to add records</p>
+        <form action="{% url 'add_record' %}" method="get">
+            <button type='submit' class='btn'>Click to Enter</button>
+        </form>
+    </div>
+</body>
+</html>
