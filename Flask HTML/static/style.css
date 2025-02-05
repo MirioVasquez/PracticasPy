@@ -1,0 +1,46 @@
+/* excersise margin, padding and border */ 
+
+body{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/bednar-long-best-french-gardens-exterior-veranda-1579038734.png?crop=1.00xw:0.381xh;0,0.425xh&resize=1200:*');
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div{
+    width: 800px;
+    background-color:blanchedalmond;
+    margin: auto;
+    border-width: 7px;
+    border-color: #0d520d;
+    border-style: double;
+    color: #0d520d;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+H1{
+    font-family: "UniMag";
+    text-align: center;
+    padding: 20px 100px;
+    margin: 0;
+    font-size: 2.5em;
+}
+h2{
+    font-family: "Yrsa";
+    padding: 0 100px;
+    padding-top: 0;
+    margin: 0;
+    font-size: 1.8em;
+}
+span{
+    font-family: "UniMag";
+}
+p{
+    font-family: "YrsaL";
+    padding: 20px 100px;
+    text-align: justify;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.2;
+}

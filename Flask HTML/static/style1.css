@@ -1,0 +1,58 @@
+/* Selectores basicos | home.html */
+.faltante {
+    color: red;
+}
+/* Propiedades de texto */
+p{
+    color: navy;
+    font-family: "DS";
+    font-style: italic ;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: justify;
+    line-height: 2;
+
+}
+
+span{
+    text-decoration: underline;
+    color: brown;
+}
+
+/* Modelaje de Caja */
+
+/* form{
+    background-color: aqua;
+    width: 90%;
+    height: 100px;
+}
+
+div{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+/* Relleno y margen | pdg.html */
+
+.formulario {
+    background-color: #c2cbff;
+    height: 200px;
+    width: 600px;
+}
+
+.formulario_input{
+    font-family: "DS";
+    background: #fbd6a4;
+    color: brown;
+    text-align: center;
+    font-weight: 700;
+    width: 50%;
+}
+
+.forsub{
+    text-transform: uppercase;
+    background-color: #fbd6a4;
+    color: brown;
+    width: 50%;
+}

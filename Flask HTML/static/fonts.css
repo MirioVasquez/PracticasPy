@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "DS" ;
+    src: url("fonts/DeliusSwashCaps-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MTS" ;
+    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UniMag";
+    src: url("fonts/UnifrakturMaguntia-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Yrsa";
+    src: url("fonts/Yrsa-Regular.ttf");
+}
+@font-face{
+    font-family: "YrsaL";
+    src: url("fonts/Yrsa-Light.ttf");
+}
