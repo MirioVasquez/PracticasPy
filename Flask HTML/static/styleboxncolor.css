@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: #648a64;
+}
+div{
+    margin: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: #213435;
+    margin: 0;
+}
+.box-default{
+    box-sizing: content-box;
+    padding: 25px;
+    border: 10px double #a6b985;
+}
+.box-new{
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid #a6b985;
+}
+h1{
+    color: #46685b;
+}
+p{
+    color: #e1e3ac;
+}
