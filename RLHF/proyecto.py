@@ -1,11 +1,18 @@
-def reverse_number(num):
+def reverse_number(invar):
   # Reverse the number
-  num1 = str(num)
-  reverse = num1[::-1]
-  reverse1 = int(reverse)
-  # Return the number
-  return reverse1
+  invarmod = str(invar)
+  reverse = invarmod[::-1]
+  # Return the variable as an integer or a string
+  while True:
+    try:
+      reverse = int(reverse)
+      return reverse
+    except ValueError:
+      return reverse
 
-## Example usage:
-print(type(reverse_number(1234))) # Output: 3221
-#print(reverse_number(987654321)) # Output: 123456789
+# Creating a variable to store the input
+variable = input("Type something to see it in backwards: ")
+
+# Givin back the reversed input
+print(f"Do you mean? {reverse_number(variable)}")
+print(type(reverse_number(variable)))
