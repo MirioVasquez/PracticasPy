@@ -20,5 +20,9 @@ def exc():
 def brdr():
     return render_template('brdr.html')
 
+@app.route('/grdt')
+def grdt():
+    return render_template('grdt.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
