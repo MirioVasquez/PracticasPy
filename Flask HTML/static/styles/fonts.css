@@ -10,9 +10,8 @@
 
 @font-face {
     font-family: "UniMag";
-    src: url("fonts/UnifrakturMaguntia-Regular.ttf");
+    src: url("fonts/UnifrakturMaguntia-Regular.ttf")
 }
-
 @font-face {
     font-family: "Yrsa";
     src: url("fonts/Yrsa-Regular.ttf");
