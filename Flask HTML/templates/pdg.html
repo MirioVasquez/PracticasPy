@@ -6,9 +6,14 @@
     <div>
         <form class="formulario">
             <h2>Formulario de Contacto</h2>
-            <input class="formulario_input" type="text" placeholder="nombre">
-            <input class="formulario_input" type="email" placeholder="email">
-            <textarea class="formulario_input textarea_input" placeholder="déjanos un mendaje"></textarea>
+            <label for="nombre">Nombre</label>
+            <input class="formulario_input" id="nombre" type="text" placeholder="Jhon Doe">
+            <label for="email">Email</label>
+            <input class="formulario_input" id="email" type="email" placeholder="example@email.com">
+            <label for="textarea">Mensaje</label>
+            <textarea class="formulario_input textarea_input" id="textarea" placeholder="déjanos un email..."></textarea>
+            <label class="checkbox_input" for="checkbox">Acepto los terminos y condiciones</label>
+            <input class="checkbox" id="checkbox" type="checkbox">
         </form>
     </div>
 {% endblock %}

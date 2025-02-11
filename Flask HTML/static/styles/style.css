@@ -6,22 +6,23 @@ div{
     margin: 30px auto;
     padding: 0;
     background-color: #333333;
-    box-shadow: 0 0 10px 5px #666666;
+    box-shadow: 0 0 10px 2px #666666;
     border-radius: 10px;
     box-sizing: content-box;
+    background: linear-gradient(transparent, #44444488);
 }
 .formulario{
     padding: 30px 60px;
     margin: 0 auto;
-    font-family: "DS";
-    font-size: 24px;
+    font-family: "MedulaOne";
+    font-size: 32px;
 }
 h2{
     margin: 0;
     padding: 0 0 10px 0;
     text-align: center;
     color: #888888;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 .formulario_input{
     height: 35px;
@@ -35,10 +36,24 @@ h2{
     color: #999999;
     box-sizing: border-box;
     font-size: 0.5em;
-    font-family: "DS";
+    font-family: "Yrsa";
+    font-weight: 100;
 }
 .textarea_input{
     resize: none;
     min-height: 120px;
-    margin: 0;
+    margin: 6px 0 0 0;
+}
+label{
+    color: #888888;
+    font-size: 0.7em;
+}
+.checkbox_input{
+    font-weight: 100;
+    font-size: 0.6em;
+}
+.checkbox{
+    height: 14px;
+    width: 14px;
+    margin: auto;
 }

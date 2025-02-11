@@ -20,3 +20,11 @@
     font-family: "YrsaL";
     src: url("fonts/Yrsa-Light.ttf");
 }
+@font-face{
+    font-family: "Plaster";
+    src: url("fonts/Plaster-Regular.ttf");
+}
+@font-face{
+    font-family: "MedulaOne";
+    src: url("fonts/MedulaOne-Regular.ttf");
+}
