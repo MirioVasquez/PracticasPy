@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-{% block title %}
-    Paddding
+{% block head %}
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
 {% endblock %}
 {% block content %}
     <div class="container">
@@ -49,11 +50,8 @@
                 <textarea class="formulario_input textarea_input" id="textarea" placeholder="déjanos un email..."></textarea>
             </div>
             <div>
-                <label class="checkbox_label" for="checkbox">Acepto los terminos y condiciones</label>
+                <label class="checkbox_label" for="checkbox">Acepto los <a href="/terminos" target="_blank">terminos y condiciones</a></label>
                 <input class="checkbox" id="checkbox" type="checkbox">
-            </div>
-            <div>
-                <a href="/home">Go to Home</a>
             </div>
         </form>
     </div>

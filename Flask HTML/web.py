@@ -24,5 +24,9 @@ def brdr():
 def grdt():
     return render_template('grdt.html')
 
+@app.route('/terminos')
+def terminos():
+    return render_template('terminos.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

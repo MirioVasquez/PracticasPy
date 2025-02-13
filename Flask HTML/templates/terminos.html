@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Terminos y condiciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/terminos.css')}}">
+{% endblock %}
+{% block content %}
+<div>
+    <a href="#volver">Ir al final</a>
+    <h1>TÉRMINOS Y CONDICIONES</h1>
+    <p class="subtitulo">Última actualización: 02-12-2025</p>
+    <h2>1. INTRODUCCIÓN</h2>
+    <p>Bienvenido/a a [Nombre de la Empresa]. Nos tomamos muy en serio la privacidad y protección de los datos de nuestros usuarios. Estos términos y condiciones explican cómo recopilamos, utilizamos y protegemos la información personal de aquellos usuarios que desean comunicarse con nuestra empresa.</p>
+    <h2>2. INFORMACIÓN RECOPILADA</h2>
+    <p>Al contactarnos, podríamos recopilar la siguiente información personal:</p>
+    <ul>
+        <li>Nombre completo</li>
+        <li>Dirección de correo electrónico</li>
+        <li>Número de teléfono</li>
+        <li>Empresa u organización (si aplica)</li>
+        <li>Otra información proporcionada voluntariamente por el usuario</li>
+    </ul>
+    <h2>3. USO DE LA INFORMACIÓN</h2>
+    <p>La información recopilada será utilizada únicamente para los siguientes fines:</p>
+    <ul>
+        <li>Responder a consultas y solicitudes de los usuarios</li>
+        <li>Brindar soporte y asistencia</li>
+        <li>Enviar información relevante sobre nuestros productos o servicios, si el usuario lo ha autorizado</li>
+        <li>Cumplir con obligaciones legales aplicables</li>
+    </ul>
+    <h2>4. PROTECCIÓN DE LOS DATOS</h2>
+    <p>Nos comprometemos a proteger la información personal de nuestros usuarios mediante la implementación de medidas de seguridad técnicas y organizativas adecuadas. Sin embargo, el usuario reconoce que ninguna transmisión de datos por Internet es completamente segura y, por lo tanto, no podemos garantizar la seguridad absoluta de la información.</p>
+    <h2>5. MANEJO DE LOS DATOS</h2>
+    <p>No compartiremos, venderemos ni divulgaremos la información personal de los usuarios a terceros, salvo en los siguientes casos:</p>
+    <ul>
+        <li>Cuando sea requerido por ley o por una autoridad competente</li>
+        <li>Cuando sea necesario para la prestación de un servicio solicitado por el usuario y con su consentimiento previo</li>
+    </ul>
+    <h2>6. DERECHOS DEL USUARIO</h2>
+    <p>El usuario tiene derecho a:</p>
+    <ul>
+        <li>Acceder, rectificar o eliminar sus datos personales</li>
+        <li>Oponerse al uso de su información con fines de marketing</li>
+        <li>Retirar su consentimiento en cualquier momento, sin afectar la legalidad del tratamiento previo</li>
+        <li>Para ejercer estos derechos, el usuario puede contactarnos en [correo electrónico de contacto]</li>
+    </ul>
+    <h2>7. CONSENTIMIENTO</h2>
+    <p>Al comunicarse con nosotros y proporcionar su información personal, el usuario acepta los términos establecidos en este documento.</p>
+    <h2>8. MODIFICACIONES A LOS TÉRMINOS Y CONDICIONES</h2>
+    <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Cualquier cambio será publicado en nuestro sitio web y, si es necesario, se notificará a los usuarios por los medios adecuados.</p>
+    <p class="subtitulo a" id="volver"><a href="/pdg">Volver al formulario</a></p>
+</div>
+{% endblock %}

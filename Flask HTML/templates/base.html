@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
+    {% block head %} {% endblock %}
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/fonts.css')}}">
     <link rel="icon" href="{{ url_for('static', filename='images/ico.jpg')}}" type="image/jpg">
     <!-- semantica para usar el url_for -->
