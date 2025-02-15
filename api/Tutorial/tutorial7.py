@@ -1,4 +1,4 @@
-from flask import Flask, url_for, redirect, render_template, request, session, flash
+from flask import Flask, url_for, redirect, render_template, Request, session, flash
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
 
@@ -25,9 +25,9 @@ def home():
 
 @app.route('/login', methods=['POST','GET'])
 def login():
-    if request.method == 'POST':
+    if Request.method == 'POST':
         session.permanent = True
-        user = request.form['nm']
+        user = Request.form['nm']
         session['user'] = user
         
         found_user = users.query.filter_by(name=user).first()
@@ -53,8 +53,8 @@ def user():
     if 'user' in session:
         user = session['user']
         
-        if request.method == 'POST':
-            email = request.form['email']
+        if Request.method == 'POST':
+            email = Request.form['email']
             session['email'] = email
             found_user = users.query.filter_by(name=user).first()
             found_user.email = email

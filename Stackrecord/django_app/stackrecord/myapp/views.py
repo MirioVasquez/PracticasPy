@@ -20,7 +20,7 @@ def add_record(request):
 
 def load_json_and_save(request):
     # Load the JSON data from the file
-    with open(r'C:\Users\Turtle\Desktop\Stackrecord\myproject\myapp\api\stockapi.json', 'r') as file:
+    with open(r'/Users/david/Desktop/archivos/django_app/stackrecord/api/stockapi.json', 'r') as file:
         data = json.load(file)
 
     # Access the "Time Series (5min)" section
@@ -28,17 +28,19 @@ def load_json_and_save(request):
 
     # Save each record to the database
     for date, values in time_series.items():
-        Records.objects.create(
-            Date_time=date,
-            open=Decimal(values['1. open']),
-            high=Decimal(values['2. high']),
-            low=Decimal(values['3. low']),
-            close=Decimal(values['4. close']),
-            volume=int(values['5. volume']),
-        )
+        try:
+            Records.objects.create(
+                Date_time=date,
+                open=int((values['1. open']).replace('.','')),
+                high=int((values['2. high']).replace('.','')),
+                low=int((values['3. low']).replace('.','')),
+                close=int((values['4. close']).replace('.','')),
+                volume=int(values['5. volume']),
+            )
+        except Exception as e:
+            print(f'Error saving records for {date}: {e}')
     return render(request, 'stocks/success.html', {'message': 'Data loaded successfully'})
 
 def success(request):
     Record = Records.objects.all()
     return render(request, 'stocks/success.html', {'Record': Record})
-

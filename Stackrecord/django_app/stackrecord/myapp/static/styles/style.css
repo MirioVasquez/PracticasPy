@@ -1,0 +1,32 @@
+body{
+    background-color: #fed;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    background-color: #151;
+    color: #997;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    cursor: pointer;
+}
+th.sort-asc::after {
+    content: " 🔼";
+}
+th.sort-desc::after {
+    content: " 🔽";
+}
