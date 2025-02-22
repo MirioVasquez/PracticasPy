@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block head %}
     <title>Formulario</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/formulario.css')}}">
 {% endblock %}
 {% block content %}
     <div class="container">
@@ -34,7 +34,7 @@
                         <option value="DNI">DNI</option>
                         <option value="CE">CE</option>
                     </select>
-                    <input class="formulario_input select_input" id="tipo_documento" type="num" placeholder="1234567">
+                    <input class="formulario_input" id="tipo_documento" type="number" max="9999999" placeholder="1234567">
                 </div>
             </fieldset>
             <div class="div_element">

@@ -8,9 +8,9 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/pdg')
+@app.route('/frm')
 def pdg():
-    return render_template('pdg.html')
+    return render_template('formulario.html')
 
 @app.route('/exc')
 def exc():

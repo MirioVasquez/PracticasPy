@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
-{% block title %}
-    Home Page
+{% block head %}
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css')}}">
 {% endblock %}
 {% block content %}
     <div>
         <h1>Ingredientes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ipsum dignissimos doloribus quam? Dolorum cupiditate, illo maiores commodi sunt laborum repudiandae non, mollitia corrupti iste, veritatis ullam nostrum distinctio recusandae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellendus quas nobis magnam, harum minima, repellat praesentium, nihil eveniet quis ex autem temporibus cumque a pariatur necessitatibus cupiditate sequi itaque?</p>
+    </div>
+    <div>
         <ul>
-            <li class="faltante">Harina</li>
+            <li>Harina</li>
             <li>Aceite</li>
             <li>Leche</li>
-            <li class="faltante">Sal</li>
+            <li><em>Sal</em></li>
         </ul>
         <p>Lorem ipsum, dolor sit amet consectetur <span>adipisicing elit.</span> Eveniet, inventore aliquid nihil in labore nisi! Aperiam quas ea minima ratione qui enim veniam accusantium veritatis debitis, sunt, placeat numquam omnis!</p>
 

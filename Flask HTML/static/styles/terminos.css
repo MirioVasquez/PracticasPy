@@ -4,6 +4,10 @@ body{
     background-color: #eeeeee;
     background: linear-gradient(to top, #dddddd, transparent);
 }
+*::selection{
+    background-color: #cccccc;
+    color: #666666;
+}
 div{
     width: 60%;
     padding: 0;
@@ -18,7 +22,7 @@ h1{
     text-align: center;
     font-size: 2.3em;
 }
-h2{
+h4 {
     margin: 0;
     padding: 35px 0 0 0;
     text-align: left;
@@ -31,21 +35,28 @@ p{
     font-size: 1.1em;
     color: #444444;
 }
-.subtitulo{
+H1 + p{
     text-align: center;
     padding: 0 0 0 0;
     font-size: 1em;
 }
+p:last-child{
+    padding-top: 50px;
+    text-align: center;
+}
 ul{
     margin: 0;
-    padding: 0 0 0 50px;
+    padding: 5px 0 0 50px;
     font-size: 1.1em;
     color: #444444;
-}
-.a{
-    padding-top: 50px;
 }
 a{
     text-decoration: underline 2.5px;
     color: #111111;
+}
+a:hover{
+    color: #666666;
+}
+a:active{
+    color: #999966;
 }

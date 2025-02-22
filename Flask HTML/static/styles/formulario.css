@@ -2,6 +2,10 @@ body{
     background-color: #333333;
     margin: 0;
 }
+*::selection{
+    background-color: #666666;
+    color: #cccccc;
+}
 .container{
     width: 600px;
     margin: 30px auto;
@@ -56,6 +60,9 @@ label{
     font-family: "Yrsa";
     font-weight: 100;
 }
+.formulario_input:invalid{
+    border-color: #ff0000;
+}
 .textarea_input{
     resize: none;
     min-height: 120px;
@@ -73,7 +80,10 @@ label{
     width: 14px;
     margin: auto;
 }
-a{
+label > a{
     color: #bbbbbb;
     text-decoration: underline;
+}
+label > a:hover{
+    color: #666666;
 }
