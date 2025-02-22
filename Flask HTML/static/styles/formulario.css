@@ -16,7 +16,7 @@ body{
     box-sizing: content-box;
     background: linear-gradient(transparent, #44444488);
 }
-.formulario{
+.form{
     padding: 30px 60px;
     margin: 0 auto;
     font-family: "MedulaOne";
@@ -45,7 +45,7 @@ label{
     color: #888888;
     font-size: 0.7em;
 }
-.formulario_input{
+.form__div__input{
     height: 35px;
     width: 100%;
     padding: 5px 5px;
@@ -60,18 +60,18 @@ label{
     font-family: "Yrsa";
     font-weight: 100;
 }
-.formulario_input:invalid{
+.form__div__input:invalid{
     border-color: #ff0000;
 }
-.textarea_input{
+.input--texarea{
     resize: none;
     min-height: 120px;
     margin: 5px 0 0 0;
 }
-.double_input{
+.input--double{
     margin: 0;
 }
-.checkbox_label{
+.form__div__label{
     font-weight: 100;
     font-size: 0.6em;
 }

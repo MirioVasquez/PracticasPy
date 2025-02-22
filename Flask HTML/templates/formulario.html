@@ -5,21 +5,21 @@
 {% endblock %}
 {% block content %}
     <div class="container">
-        <form class="formulario">
+        <form class="form">
             <h2>Formulario de Contacto</h2>
             <fieldset>
                 <legend>Datos Personales</legend>
-                <div class="div_element">
+                <div class="form__div">
                     <label for="nombre">Nombre</label>
-                    <input class="formulario_input" id="nombre" type="text" placeholder="Jhon Doe">
+                    <input class="form__div__input" id="nombre" type="text" placeholder="Jhon Doe">
                 </div>
-                <div class="div_element">
+                <div class="form__div">
                     <label for="apellido">Apellido</label>
-                    <input class="formulario_input" id="apellido" type="text" placeholder="Jhon Doe">
+                    <input class="form__div__input" id="apellido" type="text" placeholder="Jhon Doe">
                 </div>
-                <div class="div_element">
+                <div class="form__div">
                     <label>Pais</label>
-                    <select name="pais_usuario" class="formulario_input">
+                    <select name="pais_usuario" class="form__div__input">
                         <option value="none">Select</option>
                         <option value="peru">Perú</option>
                         <option value="argentina">Argentina</option>
@@ -27,30 +27,30 @@
                         <option value="bolivia">Bolivia</option>
                     </select>
                 </div>
-                <div class="div_element">
+                <div class="form__div">
                     <label for="tipo_documento">Tipo de documento</label>
-                    <select name="doc_type" class="formulario_input double_input">
+                    <select name="doc_type" class="form__div__input input--double">
                         <option value="none">Select</option>
                         <option value="DNI">DNI</option>
                         <option value="CE">CE</option>
                     </select>
-                    <input class="formulario_input" id="tipo_documento" type="number" max="9999999" placeholder="1234567">
+                    <input class="form__div__input" id="tipo_documento" type="number" max="9999999" placeholder="1234567">
                 </div>
             </fieldset>
-            <div class="div_element">
+            <div class="form__div">
                 <label for="email">Email</label>
-                <input class="formulario_input" id="email" type="email" placeholder="example@email.com">
+                <input class="form__div__input" id="email" type="email" placeholder="example@email.com">
             </div>
-            <div class="div_element">
+            <div class="form__div">
                 <label for="asunto">Asunto</label>
-                <input class="formulario_input" id="asunto" type="text" placeholder="De que se trata?">
+                <input class="form__div__input" id="asunto" type="text" placeholder="De que se trata?">
             </div>
-            <div class="div_element">
+            <div class="form__div">
                 <label for="textarea">Mensaje</label>
-                <textarea class="formulario_input textarea_input" id="textarea" placeholder="déjanos un email..."></textarea>
+                <textarea class="form__div__input input--texarea" id="textarea" placeholder="déjanos un email..."></textarea>
             </div>
-            <div>
-                <label class="checkbox_label" for="checkbox">Acepto los <a href="/terminos" target="_blank">terminos y condiciones</a></label>
+            <div class="form__div">
+                <label class="form__div__label" for="checkbox">Acepto los <a href="/terminos" target="_blank">terminos y condiciones</a></label>
                 <input class="checkbox" id="checkbox" type="checkbox">
             </div>
         </form>
