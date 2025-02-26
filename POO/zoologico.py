@@ -3,13 +3,13 @@ class animal:
         print("Comer")
     
 class mamifero(animal):
-    # def accion(self):
-    #     print("Amamantar")
-    pass
+    def accion(self):
+        print("Amamantar")
+    
 class volador(animal):
-    # def accion(self):
-    #     print("Volar")
-    pass
+    def accion(self):
+        print("Volar")
+        
 class murcielago(mamifero,volador):
     pass
 
