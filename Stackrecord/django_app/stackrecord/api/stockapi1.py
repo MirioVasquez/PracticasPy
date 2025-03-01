@@ -1,6 +1,6 @@
 import json
 
-with open(r'/Users/david/Desktop/archivos/Django/stackrecord/api/stockapi.json', 'r') as file:
+with open(r'/Users/david/Desktop/Practicas_Py/PracticasPy/Stackrecord/django_app/stackrecord/api/stockapi.json', 'r') as file:
     data = json.load(file)
     
 time_series = data.get("Time Series (5min)", {})
