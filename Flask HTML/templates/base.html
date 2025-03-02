@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block head %} {% endblock %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/fonts.css')}}">
     <link rel="icon" href="{{ url_for('static', filename='images/ico.jpg')}}" type="image/jpg">
     <!-- semantica para usar el url_for -->
@@ -11,6 +12,36 @@
 
 </head>
 <body>
+    <header>
+        <dialog class="menu" open>
+            <div class="menu__div">
+                <ul class="menu__list">
+                    <h2 class="menu__item menu__item__h2">Menu:</h2>
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/frm" class="menu__link">Formulario</a>
+                    </li>
+                    <li class="menu__item">
+                        <form method="dialog">
+                            <button class="menu__button">&#8801;</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <form method="dialog">
+                        <button class="nav__button">&#8801;</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
     {% block content %}
     {% endblock %}
 </body>

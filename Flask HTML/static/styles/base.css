@@ -1,0 +1,111 @@
+/* ###################################### */
+/* Formatos del NAV */
+/* ###################################### */
+
+.nav{
+    width: 100%;
+    all: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nav__list{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.nav__item{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+/* .nav__link{
+    color: #444;
+    font-family: MTS;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+    ## The same as .nav__button
+} */
+.nav__button{
+    color: #444;
+    font-family: MTS;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+}
+.nav__item:hover{
+    background-color: #7777;
+    cursor: pointer;
+}
+.nav__link:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* ###################################### */
+/* Formatos del menu */
+/* ###################################### */
+
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #0007;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu__div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+.menu__item__h2{
+    padding: 0;
+    margin: 0;
+}
+.menu__list{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: MTS;
+    font-weight: bold;
+    color: #444;
+    font-size: 0;
+}
+.menu__item{
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 10px;
+    color: #444;
+}
+.menu__button{
+    color: #444;
+    font-family: MTS;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+}
+.menu__link{
+    color: #444;
+}
+
+.menu__link:hover{
+    color: #999;
+    cursor: pointer;
+}
+.menu__button:hover{
+    cursor: pointer;
+    color: #999
+}
