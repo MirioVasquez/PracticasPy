@@ -46,8 +46,6 @@ class Pizza(Circle):
                 print(f"your {self.toppings} pizza is a personal one")
 
 # # It is possible to change the value of '__π' from outside the class?
-Circle.__π = 2
 circle1 = Circle(None,4)
-print(circle1.__π)
 print(circle1.get_pi())
 circle1.display_info()
